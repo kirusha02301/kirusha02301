@@ -14,7 +14,9 @@
 # turtle - папка с черепахами рисующими деревья
 
 $$ tg\alpha*ctg\alpha=1 $$
+
 $$ \frac{cos\alpha}{sin\alpha}=ctg\alpha $$
+
 $$ \frac{sin\alpha}{cos\alpha}=tg\alpha $$
 
  Формулы:
