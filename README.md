@@ -12,4 +12,4 @@
 # cod hemminga.ipynb - код Хемминга
 # code3.py - код для решения примеров с 2-мя числами(*,,+,-)
 # turtle - папка с черепахами рисующими деревья
-$$$tg\alpha*ctg\alpha=1$$$
+$$tg\alpha*ctg\alpha=1$$$
