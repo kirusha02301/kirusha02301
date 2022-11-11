@@ -12,5 +12,10 @@
 # cod hemminga.ipynb - код Хемминга
 # code3.py - код для решения примеров с 2-мя числами(*,,+,-)
 # turtle - папка с черепахами рисующими деревья
+
+tg\alpha*ctg\alpha=1\\
+\frac{cos\alpha}{sin\alpha}=ctg\alpha\\
+\frac{sin\alpha}{cos\alpha}=tg\alpha
+
  Формулы:
 ![lagrida_latex_editor (2)](https://user-images.githubusercontent.com/114716562/201263983-12c4d416-8ed0-4487-8b4f-327e2bcae0ff.png)
