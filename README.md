@@ -12,7 +12,7 @@
 # cod hemminga.ipynb - код Хемминга
 # code3.py - код для решения примеров с 2-мя числами(*,,+,-)
 # turtle - папка с черепахами рисующими деревья
-
+# generatorimen - генератор имен
 $$ tg\alpha*ctg\alpha=1 $$
 
 $$ \frac{cos\alpha}{sin\alpha}=ctg\alpha $$
