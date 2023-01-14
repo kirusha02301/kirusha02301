@@ -1,0 +1,21 @@
+условие:Определите количество пятизначных чисел, записанных в восьмеричной системе счисления, в записи которых только одна цифра 6, при этом никакая нечётная цифра не стоит рядом с цифрой 6.
+код:
+count=0
+for a in range (1,8):
+    for b in range (8):
+        for c in range (8):
+            for d in range (8):
+                for e in range (8):
+                    s=str(a)+str(b)+str(c)+str(d)+str(e)
+                    if a == 6 and (b == 2 or b == 4  or b == 8 or b==0) and c!=6 and d!=6 and e!=6:
+                        count+=1
+                    if b == 6 and (a == 2 or a == 4 or a == 8  ) and (c == 2 or c == 4 or c == 8 or c ==0) and d!=6 and e!=6:
+                        count+=1
+                    if c == 6 and (b == 2 or b == 4 or b == 8 or b==0 ) and (d == 2 or d == 4 or d == 8 or d ==0) and a!=6 and e!=6:
+                        count+=1
+                    if d == 6 and (c == 2 or c == 4 or c == 8 or c ==0) and (e == 2 or e == 4 or e == 8 or e==0 ) and a!=6 and b!=6:
+                        count+=1
+                    if e == 6 and (d == 2 or d == 4 or d == 8 or d ==0 ) and a!=6 and b!=6 and c!=6:
+                        count+=1
+print(count)
+Ответ:2961
