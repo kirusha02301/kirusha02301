@@ -22,3 +22,11 @@ $$ \frac{sin\alpha}{cos\alpha}=tg\alpha $$
  Формулы:
 ![lagrida_latex_editor (2)](https://user-images.githubusercontent.com/114716562/201263983-12c4d416-8ed0-4487-8b4f-327e2bcae0ff.png)
 
+
+
+
+
+
+
+павел сверчков пидарас
+
