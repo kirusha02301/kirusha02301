@@ -80,3 +80,4 @@ conn = sqlite3.connect('orders.db')
 cur = conn.cursor()
 create()
 sql()
+https://lichess.org/CiFDgurz
