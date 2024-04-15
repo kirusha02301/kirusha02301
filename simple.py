@@ -275,3 +275,68 @@ while True:
         print(event, values)
 # Close the window
 window.close()
+
+#f=open('333.txt')
+f=open('27A130424.txt')
+N=int(f.readline())
+b=[int(x) for x in f]
+podposl=[]
+for i in range(len(b)-1):
+    podposl.append(b[i+1]-b[i])
+spis=[podposl[0]]
+maxs=[]
+sums=0
+for i in range(1,len(podposl)):
+    spis.append(podposl[i])
+    sums+=podposl[i]
+    if sums<=0:
+        spis=[]
+        sums=0
+    maxs.append([sums,i, len(spis)])
+maxs.sort()
+print(maxs)
+print(maxs[-1])
+
+N=int(input())
+soed=[[] for i in range(N)]
+spisb={}#ключи путь внутри буквы
+alf=''
+for i in range(N-1):
+    p=input().split()
+    k,l,m=p[0],p[1],p[2]
+    k,l=int(k)-1,int(l)-1
+    soed[k].append(l)
+    soed[l].append(k)
+    spisb[str(min(k,l))+'-'+str(max(k,l))]=m
+    if m not in alf:
+        alf+=m
+
+K=int(input())
+alf=sorted(alf)
+#print(alf)
+#print(soed)
+toyu={}
+slovo=''
+minssl='z'*100
+def dfs(i):
+    global vershin,spisb,slovo,toyu
+    vershin[i]='Grey'
+    for h in soed[i]:
+        if vershin[h]=='White':
+            u=spisb[str(min(i,h))+'-'+str(max(i,h))]
+            slovo=slovo+u
+            if len(slovo) == K:
+                if slovo not in toyu:toyu[slovo]=1
+                else:toyu[slovo]+=1
+            elif len(slovo) < K :
+                dfs(h)
+            slovo=slovo[:-1]
+for u in range(N):
+    vershin = ['White'] * N
+    dfs(u)
+if len(toyu)==0:print(0)
+else:
+    toyu = sorted(toyu.items())
+    rt=toyu[0]
+    print(rt[1])
+    print(rt[0])
